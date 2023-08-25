@@ -52,7 +52,20 @@ export function dom() {
   humidityText.textContent = "50%";
   const humiditySub = document.createElement("p");
   humiditySub.textContent = "Humidity";
-  col.appendChild(humidityText);
-  col.appendChild(humiditySub);
+  humidityInfo.appendChild(humidityText);
+  humidityInfo.appendChild(humiditySub);
+  col.appendChild(humidityInfo);
   details.appendChild(col);
+  const col2 = document.createElement("div");
+  col2.className = "col";
+  col2.innerHTML = img.createImg("wind.png", "wind-icon");
+  const windyText = document.createElement("p");
+  windyText.textContent = "15 mph";
+  const windySub = document.createElement("p");
+  windySub.textContent = "Wind Speed";
+  const windInfo = document.createElement("div");
+  windInfo.appendChild(windyText);
+  windInfo.appendChild(windySub);
+  col2.appendChild(windInfo);
+  details.appendChild(col2);
 }
