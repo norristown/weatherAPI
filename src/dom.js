@@ -50,6 +50,7 @@ export function dom() {
   col.appendChild(humidityInfo);
   const humidityText = document.createElement("p");
   humidityText.textContent = "50%";
+  humidityText.className = "humidity";
   const humiditySub = document.createElement("p");
   humiditySub.textContent = "Humidity";
   humidityInfo.appendChild(humidityText);
@@ -61,6 +62,7 @@ export function dom() {
   col2.innerHTML = img.createImg("wind.png", "wind-icon");
   const windyText = document.createElement("p");
   windyText.textContent = "15 mph";
+  windyText.className = "windy";
   const windySub = document.createElement("p");
   windySub.textContent = "Wind Speed";
   const windInfo = document.createElement("div");
